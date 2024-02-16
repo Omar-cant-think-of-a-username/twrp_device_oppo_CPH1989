@@ -81,7 +81,7 @@ BOARD_RECOVERYIMAGE_PARTITION_SIZE := 67108864
 BOARD_USERDATAIMAGE_FILE_SYSTEM_TYPE := ext4
 BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := ext4
 TARGET_COPY_OUT_VENDOR := vendor
-TARGET_COPY_OUT_ODM := odm
+# TARGET_COPY_OUT_ODM := odm
 TARGET_COPY_OUT_SYSTEM := system
 
 # Platform
@@ -90,7 +90,7 @@ TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
 
 # File systems
 BOARD_SYSTEMIMAGE_FILE_SYSTEM_TYPE := ext4
-BOARD_ODMIMAGE_FILE_SYSTEM_TYPE := ext4
+# BOARD_ODMIMAGE_FILE_SYSTEM_TYPE := ext4
 BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := ext4
 BOARD_USERDATAIMAGE_FILE_SYSTEM_TYPE := f2fs
 BOARD_CACHEIMAGE_FILE_SYSTEM_TYPE := ext4
@@ -124,13 +124,13 @@ TW_THEME := portrait_hdpi
 TW_EXTRA_LANGUAGES := true
 TW_INPUT_BLACKLIST := "hbtp_vm"
 TW_DEFAULT_BRIGHTNESS := 531
-TW_INCLUDE_LOGICAL := my_product my_heytap my_company my_preload my_stock my_carrier my_region my_engineering my_manifest
+# TW_INCLUDE_LOGICAL := my_product my_heytap my_company my_preload my_stock my_carrier my_region my_engineering my_manifest
 TW_SCREEN_BLANK_ON_BOOT := true
 TW_EXCLUDE_DEFAULT_USB_INIT := true
 TW_DEFAULT_EXTERNAL_STORAGE := true
 TW_INCLUDE_CRYPTO := true
 TW_INCLUDE_CRYPTO_FBE := true
-TW_INCLUDE_FBE_METADATA_DECRYPT := true
+# TW_INCLUDE_FBE_METADATA_DECRYPT := true
 TW_CUSTOM_CPU_TEMP_PATH := /sys/devices/virtual/thermal/thermal_zone1/temp
 TW_INTERNAL_STORAGE_PATH := "/data/media"
 TW_INTERNAL_STORAGE_MOUNT_POINT := "data"
@@ -142,6 +142,12 @@ TARGET_USES_LOGD := true
 TW_EXCLUDE_APEX := true
 TARGET_USES_MKE2FS := true
 BUILD_BROKEN_MISSING_REQUIRED_MODULES := true
+# Crypto
+TW_INCLUDE_CRYPTO := true
+TW_CRYPTO_FS_TYPE := "ext4"
+TW_CRYPTO_REAL_BLKDEV := "/dev/block/platform/bootdevice/by-name/userdata"
+TW_CRYPTO_MNT_POINT := "/data"
+TW_CRYPTO_FS_OPTIONS := "nosuid,nodev,noatime,discard,noauto_da_alloc,data=ordered"
 
 # MTK Hardware 
  BOARD_HAS_MTK_HARDWARE := true 
