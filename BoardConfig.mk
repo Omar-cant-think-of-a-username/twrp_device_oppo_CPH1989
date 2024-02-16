@@ -130,7 +130,7 @@ TW_EXCLUDE_DEFAULT_USB_INIT := true
 TW_DEFAULT_EXTERNAL_STORAGE := true
 TW_INCLUDE_CRYPTO := true
 TW_INCLUDE_CRYPTO_FBE := true
-# TW_INCLUDE_FBE_METADATA_DECRYPT := true
+TW_INCLUDE_FBE_METADATA_DECRYPT := true
 TW_CUSTOM_CPU_TEMP_PATH := /sys/devices/virtual/thermal/thermal_zone1/temp
 TW_INTERNAL_STORAGE_PATH := "/data/media"
 TW_INTERNAL_STORAGE_MOUNT_POINT := "data"
@@ -143,11 +143,11 @@ TW_EXCLUDE_APEX := true
 TARGET_USES_MKE2FS := true
 BUILD_BROKEN_MISSING_REQUIRED_MODULES := true
 # Crypto
-TW_INCLUDE_CRYPTO := true
-TW_CRYPTO_FS_TYPE := "ext4"
-TW_CRYPTO_REAL_BLKDEV := "/dev/block/platform/bootdevice/by-name/userdata"
-TW_CRYPTO_MNT_POINT := "/data"
-TW_CRYPTO_FS_OPTIONS := "nosuid,nodev,noatime,discard,noauto_da_alloc,data=ordered"
+# TW_INCLUDE_CRYPTO := true
+# TW_CRYPTO_FS_TYPE := "ext4"
+# TW_CRYPTO_REAL_BLKDEV := "/dev/block/platform/bootdevice/by-name/userdata"
+# TW_CRYPTO_MNT_POINT := "/data"
+# TW_CRYPTO_FS_OPTIONS := "nosuid,nodev,noatime,discard,noauto_da_alloc,data=ordered"
 
 # MTK Hardware 
  BOARD_HAS_MTK_HARDWARE := true 
