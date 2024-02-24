@@ -17,3 +17,13 @@ PRODUCT_SOONG_NAMESPACES += \
 # tzdata
 PRODUCT_PACKAGES_ENG += \
     tzdata_twrp
+
+# VNDK
+PRODUCT_TARGET_VNDK_VERSION := 30
+
+# API
+PRODUCT_SHIPPING_API_LEVEL := 30
+# health Hal
+PRODUCT_PACKAGES += \
+    android.hardware.health@2.1-impl \
+    android.hardware.health@2.1-service \
