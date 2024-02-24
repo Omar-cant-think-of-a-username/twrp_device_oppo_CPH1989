@@ -112,6 +112,16 @@ VENDOR_SECURITY_PATCH := 2021-08-01
 
 TARGET_RECOVERY_PIXEL_FORMAT := RGBX_8888
 
+# VNDK
+PRODUCT_TARGET_VNDK_VERSION := 30
+
+# API
+PRODUCT_SHIPPING_API_LEVEL := 30
+# health Hal
+PRODUCT_PACKAGES += \
+    android.hardware.health@2.1-impl \
+    android.hardware.health@2.1-service \
+
 # Hack: prevent anti rollback
 PLATFORM_SECURITY_PATCH := 2099-12-31
 VENDOR_SECURITY_PATCH := 2099-12-31
