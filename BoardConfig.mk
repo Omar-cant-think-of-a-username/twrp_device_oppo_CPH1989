@@ -103,6 +103,10 @@ BOARD_HAS_LARGE_FILESYSTEM := true
 BOARD_USES_MTP := true
 BOARD_BUILD_SYSTEM_ROOT_IMAGE := false
 
+# Related to Booting
+androidboot.selinux=permissive
+androidboot.boot_devices=bootdevice
+
 # Metadata
 BOARD_USES_METADATA_PARTITION := true
 BOARD_ROOT_EXTRA_FOLDERS := metadata my_product my_heytap my_company my_preload my_stock my_carrier my_region my_engineering my_manifest
