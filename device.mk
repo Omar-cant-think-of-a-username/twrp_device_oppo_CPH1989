@@ -10,16 +10,6 @@ LOCAL_PATH := device/oppo/CPH1989
 # Assert
 TARGET_OTA_ASSERT_DEVICE := CPH1989
 
- # Boot control HAL
-PRODUCT_PACKAGES += \
-    android.hardware.boot@1.0-impl \
-    android.hardware.boot@1.0-service
-
-PRODUCT_PACKAGES += \
-    bootctrl.{{ device_platform }}
-
-PRODUCT_STATIC_BOOT_CONTROL_HAL := \
-
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
