@@ -13,7 +13,7 @@ ALLOW_MISSING_DEPENDENCIES := true
 # Architecture
 TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv8-a
- TARGET_CPU_ABI := arm64-v8a
+TARGET_CPU_ABI := arm64-v8a
 TARGET_CPU_ABI2 := 
 TARGET_CPU_VARIANT := cortex-a73
 
@@ -105,7 +105,7 @@ BOARD_BUILD_SYSTEM_ROOT_IMAGE := true
 
 # Related to Booting
 androidboot.selinux=permissive
-androidboot.boot_devices=bootdevice,soc/11230000.mmc,11230000.mmc,soc/11270000.ufshci,11270000.ufshci
+androidboot.boot_devices=bootdevice
 
 # Metadata
 BOARD_USES_METADATA_PARTITION := true
