@@ -108,8 +108,8 @@ androidboot.selinux=permissive
 androidboot.boot_devices=bootdevice
 
 # Metadata
-BOARD_USES_METADATA_PARTITION := true
-BOARD_ROOT_EXTRA_FOLDERS := metadata my_product my_heytap my_company my_preload my_stock my_carrier my_region my_engineering my_manifest
+# BOARD_USES_METADATA_PARTITION := true
+# BOARD_ROOT_EXTRA_FOLDERS := metadata my_product my_heytap my_company my_preload my_stock my_carrier my_region my_engineering my_manifest
 
 # Security patch level
 VENDOR_SECURITY_PATCH := 2021-08-01
@@ -144,7 +144,7 @@ TWRP_INCLUDE_LOGCAT := true
 TARGET_USES_LOGD := true
 TW_EXCLUDE_APEX := true
 TARGET_USES_MKE2FS := true
-TW_USE_UFS := true
+# TW_USE_UFS := true
 TW_UMS_LUNFILE := "/sys/class/misc/ufs_lun/lun"
 BUILD_BROKEN_MISSING_REQUIRED_MODULES := true
 # Crypto
