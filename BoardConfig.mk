@@ -101,7 +101,7 @@ TARGET_USERIMAGES_USE_F2FS := true
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/recovery/root/system/etc/recovery.fstab
 BOARD_HAS_LARGE_FILESYSTEM := true
 BOARD_USES_MTP := true
-BOARD_BUILD_SYSTEM_ROOT_IMAGE := true
+BOARD_BUILD_SYSTEM_ROOT_IMAGE := false
 
 # Related to Booting
 androidboot.selinux=permissive
