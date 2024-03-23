@@ -100,11 +100,11 @@ TARGET_USERIMAGES_USE_F2FS := true
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/recovery/root/system/etc/recovery.fstab
 # BOARD_HAS_LARGE_FILESYSTEM := true
 BOARD_USES_MTP := true
-# BOARD_BUILD_SYSTEM_ROOT_IMAGE := true
+BOARD_BUILD_SYSTEM_ROOT_IMAGE := true
 
 # Related to Booting
-androidboot.selinux=permissive
-androidboot.boot_devices=bootdevice
+# androidboot.selinux=permissive
+# androidboot.boot_devices=bootdevice
 
 # Metadata
 # BOARD_USES_METADATA_PARTITION := true
@@ -131,6 +131,7 @@ TW_DEFAULT_EXTERNAL_STORAGE := true
 TW_INCLUDE_CRYPTO := false
 TW_INCLUDE_CRYPTO_FBE := false
 TW_INCLUDE_FBE_METADATA_DECRYPT := false
+TW_INCLUDE_RESETPROP := true
 TW_CUSTOM_CPU_TEMP_PATH := /sys/devices/virtual/thermal/thermal_zone1/temp
 TW_INTERNAL_STORAGE_PATH := "/data/media/0"
 TW_INTERNAL_STORAGE_MOUNT_POINT := "data"
